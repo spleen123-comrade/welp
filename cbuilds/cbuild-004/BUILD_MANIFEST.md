@@ -1,10 +1,23 @@
-# cbuild-004 — Week 3
+# Welp cbuild-004 — Complete Cumulative Build (Weeks 1–3)
 
-## Scope
-Solana adapter foundation, instruction/account-aware normalized events, and cross-chain provider failover foundation.
+This cbuild is the cumulative Weeks 1–3 snapshot. It preserves all prior Welp work and adds the Week 1 architecture/core foundation, Week 2 EVM foundation, and Week 3 Solana/data-resiliency foundation.
+
+## Included
+- PROJECT_RULES.md
+- README.md
+- pyproject.toml
+- docs/architecture/*
+- welp_core/*
+- welp_chains/evm/*
+- welp_chains/solana/*
+- tests/*
+- Prior cbuild manifests
 
 ## Safety
-Read/streaming only. No wallet signing, arbitrary program execution, or live trading.
+- No previous project files were deleted.
+- Live trading remains disabled by default.
+- No private keys or secrets are stored in source.
+- This snapshot is a source-level cumulative snapshot; generated caches and other nonessential artifacts are excluded.
 
-## Verification
-Deterministic fixtures test Solana event normalization, preservation of program/signer/writable-account context, transaction lookup, health, and failover.
+## Git commit
+9cc41b9a657dca0bc64c84ee3b4b81b491bc53f3
