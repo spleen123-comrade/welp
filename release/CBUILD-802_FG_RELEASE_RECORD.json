@@ -1,0 +1,14 @@
+{
+  "build": "cbuild-802",
+  "parent": "cbuild-801",
+  "milestone": "F_G_REPRODUCIBLE_VERIFICATION_AND_RELEASE_GOVERNANCE",
+  "verification": "PASS",
+  "f": "CLOSED",
+  "g": "CLOSED",
+  "deleted_paths": [],
+  "mutated_predecessor_paths": [],
+  "signing": "LOCKED",
+  "broadcast": "LOCKED",
+  "live_gates_3_to_7": "UNCHANGED",
+  "artifact": "Welp_cbuild-802_COMPLETE_CUMULATIVE_FLAT.zip"
+}
