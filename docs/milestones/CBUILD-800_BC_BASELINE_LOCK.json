@@ -1,0 +1,18 @@
+{
+  "build": "cbuild-800",
+  "milestone": "B_C_BUILD_IDENTITY_AND_CUMULATIVE_INTEGRITY",
+  "parent": "cbuild-799",
+  "status": "PROTECTED_BASELINE",
+  "identity_audit": "PASS",
+  "cumulative_audit": "PASS",
+  "c800_regression": "4/4 PASS",
+  "c799_architecture_regression": "5/5 PASS",
+  "predecessor_archive_entries": 5114,
+  "final_zip_entries": 5128,
+  "missing_predecessor_entries": 0,
+  "mutated_predecessor_entries": 0,
+  "source_tree_sha256": "58ec69480e7077697c90c791df880a38d89707eeb80445861756a43284f21875",
+  "archive_sha256": "b66dad7cab94be7f298d8b3e12c85c850826864f35893621245fbc6703098715",
+  "signing": "LOCKED",
+  "broadcast": "LOCKED"
+}
