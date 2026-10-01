@@ -1,0 +1,14 @@
+{
+  "build": "cbuild-802",
+  "parent": "cbuild-801",
+  "milestone": "F_G_REPRODUCIBLE_VERIFICATION_AND_RELEASE_GOVERNANCE",
+  "status": "PASS",
+  "f": "CLOSED",
+  "g": "CLOSED",
+  "c801_predecessor_deletions": 0,
+  "c801_predecessor_mutations": 0,
+  "offline_only": true,
+  "signing": "LOCKED",
+  "broadcast": "LOCKED",
+  "live_gates_3_to_7": "UNCHANGED_NOT_PROMOTED"
+}
