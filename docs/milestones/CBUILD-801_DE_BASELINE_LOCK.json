@@ -1,0 +1,12 @@
+{
+  "build": "cbuild-801",
+  "status": "PROTECTED_BASELINE",
+  "parent": "cbuild-800",
+  "d": "CLOSED",
+  "e": "CLOSED",
+  "offline_contract": "VERIFIED",
+  "live_gates_3_to_7": "UNCHANGED",
+  "signing": "LOCKED",
+  "broadcast": "LOCKED",
+  "archive_sha256": "3e993186d35f3468e740608a9c0982b211dc793f235497599ac7345333ded3b5"
+}
