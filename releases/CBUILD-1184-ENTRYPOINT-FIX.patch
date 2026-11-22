@@ -1,0 +1,18 @@
+--- a/welp_ui/app.py
++++ b/welp_ui/app.py
+@@ -1,11 +1,10 @@
+ from __future__ import annotations
+-from welp_ui.app_cbuild723 import main
+-"""cbuild-561 active UI implementation; cumulative successor to locked cbuild-553 and cbuild-555.
++"""Welp CBUILD-1184 active Streamlit entry point.
+ 
+-This is the cumulative active UI surface derived from the previously verified
+-cbuild-495 implementation, with stale runtime identity markers advanced to the
+-current build. Historical cbuild files remain preserved unchanged.
++This cumulative UI entry point preserves the CBUILD-1183 runtime and the
++CBUILD-723 interface implementation. Historical build modules remain intact.
+ """
++from welp_ui.app_cbuild723 import main
+ from welp_intelligence.scanner_cbuild449 import scan_welp_chain449
+ from welp_intelligence.holder_wallet_intelligence_cbuild620 import build_holder_wallet_intelligence_report
+ from welp_intelligence.holder_provider_cbuild621 import read_evm_holders, read_solana_token_accounts
