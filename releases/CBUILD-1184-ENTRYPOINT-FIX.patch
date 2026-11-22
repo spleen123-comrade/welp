@@ -1,6 +1,6 @@
 --- a/welp_ui/app.py
 +++ b/welp_ui/app.py
-@@ -1,11 +1,10 @@
+@@ -1,11 +1,18 @@
  from __future__ import annotations
 -from welp_ui.app_cbuild723 import main
 -"""cbuild-561 active UI implementation; cumulative successor to locked cbuild-553 and cbuild-555.
@@ -12,7 +12,32 @@
 +This cumulative UI entry point preserves the CBUILD-1183 runtime and the
 +CBUILD-723 interface implementation. Historical build modules remain intact.
  """
++from pathlib import Path
++import sys
++
++# Resolve the project root before importing any sibling Welp packages.
++_PROJECT_ROOT = Path(__file__).resolve().parents[1]
++if str(_PROJECT_ROOT) not in sys.path:
++    sys.path.insert(0, str(_PROJECT_ROOT))
++
 +from welp_ui.app_cbuild723 import main
  from welp_intelligence.scanner_cbuild449 import scan_welp_chain449
  from welp_intelligence.holder_wallet_intelligence_cbuild620 import build_holder_wallet_intelligence_report
  from welp_intelligence.holder_provider_cbuild621 import read_evm_holders, read_solana_token_accounts
+@@ -22,18 +29,9 @@
+ # HISTORICAL_CBUILD_254: prior protected runtime was cbuild-254; preserved cumulatively.
+ # cbuild-217 compatibility marker: WELP_BUILD = "cbuild-217"
+ # cbuild-214 compatibility marker: WELP_BUILD = "cbuild-214"
+-from pathlib import Path
+-import time
+ import time
+ import base64
+ import math
+-import sys
+-import time
+ 
+-# Robust sibling-package imports when Streamlit is launched with a file path.
+-_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+-if str(_PROJECT_ROOT) not in sys.path:
+-    sys.path.insert(0, str(_PROJECT_ROOT))
+-
